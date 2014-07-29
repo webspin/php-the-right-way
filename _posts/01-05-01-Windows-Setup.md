@@ -5,13 +5,11 @@ anchor: windows_setup
 
 ## Windows Setup {#windows_setup_title}
 
-PHP is available in several ways for Windows. You can [download the binaries][php-downloads] and until recently you could use a '.msi' 
-installer. The installer is no longer supported and stops at PHP 5.3.0.
+PHP is voor windows op verschillende manieren beschikbaar. Je kan de [binaries downloaden][php-downloads] en tot recent kon je ook een .msi installer gebruiken. Dit is echter niet meer mogelijk sinds PHP 5.3.0.
 
-For learning and local development you can use the built in webserver with PHP 5.4+ so you don't need to worry about configuring it. If you 
-would like an "all-in-one" which includes a full-blown webserver and MySQL too then tools such as the [Web Platform Installer][wpi], 
-[Zend Server CE][zsce], [XAMPP][xampp], [EasyPHP][easyphp] and [WAMP][wamp] will help get a Windows development environment up and running fast. That said, these tools will be 
-a little different from production so be careful of environment differences if you are working on Windows and deploying to Linux.
+Om PHP te leren en lokaal te ontwikkelen kan je de ingebouwde webserver bij PHP5.4+ gebruiken, zodat je je geen zorgen moet maken over configuratie en dergelijke. 
+Indien je een "all-in-one" oplossing wil inclusief een volledige webserver en MySQL, kunnen programma's zoals de [Web Platform Installer][wpi], 
+[Zend Server CE][zsce], [XAMPP][xampp], [EasyPHP][easyphp] en [WAMP][wamp] je helpen om een Windows development omgeving snel op te zetten. Bedenk wel dat door deze programma's te gebruiken, jouw ontwikkelingsomgeving kan verschillen van de uiteindelijke productie omgeving, zeker indien je ontwikkelt op Windows en live draait op Linux.
 
 If you need to run your production system on Windows then IIS7 will give you the most stable and best performance. You can use 
 [phpmanager][phpmanager] (a GUI plugin for IIS7) to make configuring and managing PHP simple. IIS7 comes with FastCGI built in and ready 
