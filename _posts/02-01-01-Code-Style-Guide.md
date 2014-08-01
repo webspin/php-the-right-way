@@ -4,36 +4,31 @@ anchor: code_style_guide
 
 # Code Style Guide  {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+De PHP gemeenschap is groot en divers, en bestaat uit ontelbare libraries, frameworks en componenten. PHP ontwikkelaars hebben de gewoonte om 
+verschillende hiervan te combineren in één enkel project. 
+Het is belangrijk dat PHP code (zo dicht mogelijk) een gemeenschappelijke 'code style' benadert, opdat ontwikkelaars zo weinig mogelijk problemen tegen komen bij het combineren en gebruiken van verschillende libraries.
 
-The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related 
-to code-style, but those that do are [PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] and [PSR-4][psr4]. These recommendations 
-are merely a set of rules that some projects like Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, 
-etc are starting to adopt. You can use them for your own projects, or continue to use your own personal style.
+De [Framework Interop Group][fig] heeft een reeks stijl aanbevelingen gemaakt en goed gekeurd. Deze voorstellen gaan niet allemaal over code stijl, maar diegene die er wel over gaan zijn [PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] en [PSR-4][psr4]. 
+Deze aanbevelingen zijn niet meer dan een reeks regels die sommige projecten zoals Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, 
+etc beginnen toepassen. 
+Je kan ze gebruiken in jouw projecten, of je eigen stijl blijven gebruiken.
 
-Ideally you should write PHP code that adheres to a known standard. This could be any combination of PSR's, or one 
-of the coding standards made by PEAR or Zend. This means other developers can easily read and work with your code, 
-and applications that implement the components can have consistency even when working with lots of third-party code. 
+Hoedanook kan je best PHP code schrijven die een gekende standaard volgt. Dit kan eender welke combinatie zijn van PSRs, of één van de code standaards van PEAR or Zend. 
+Dit betekent dat andere ontwikkelaars jouw code gemakkelijk kunnen lezen en ermee werken, en software die jouw componenten gebruikt kan samenhang hebben ondanks het gebruik van veel externe code...
 
-* [Read about PSR-0][psr0]
-* [Read about PSR-1][psr1]
-* [Read about PSR-2][psr2]
-* [Read about PSR-4][psr4]
-* [Read about PEAR Coding Standards][pear-cs]
-* [Read about Zend Coding Standards][zend-cs]
-* [Read about Symfony Coding Standards][symfony-cs]
+* [Lees meer over PSR-0][psr0]
+* [Lees meer over PSR-1][psr1]
+* [Lees meer over PSR-2][psr2]
+* [Lees meer over PSR-4][psr4]
+* [Lees meer over PEAR Code Standards][pear-cs]
+* [Lees meer over Zend Code Standards][zend-cs]
+* [Lees meer over Symfony Coding Standards][symfony-cs]
 
-You can use [PHP_CodeSniffer][phpcs] to check code against any one of these recommendations, and plugins for text editors 
-like [Sublime Text 2][st-cs] to be given real time feedback. 
+Je kan [PHP_CodeSniffer][phpcs] gebruiken om te conroleren of jouw code één van deze aanbevelingen volgt, en plugins voor text editors zoals [Sublime Text 2][st-cs] om real-time feedback te geven. 
 
-Use Fabien Potencier's [PHP Coding Standards Fixer][phpcsfixer] to automatically modify your code syntax so that it
-conforms to these standards, saving you from fixing each problem by hand.
+Gebriuk de [PHP Coding Standards Fixer][phpcsfixer] van Fabien Potencier om automatisch jouw code syntax aan te passen zodat het deze standaarden volgt, zodat je dit niet overal manueel moet doen.
 
-English is preferred for all symbol names and code infrastructure. Comments may be written in any language easily readable 
-by all current and future parties who may be working on the codebase.
+Als taal gaat de voorkeur uit naar het Engels voor alle symbolen en infrastructuur namen. Commentaar mag in iedere taal geschreven worden die door alle huidige en toekomstige ontwikkelaars van de code gemakkelijk begrepen kan worden.
 
 [fig]: http://www.php-fig.org/
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md

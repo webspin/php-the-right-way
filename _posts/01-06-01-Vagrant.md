@@ -5,30 +5,25 @@ anchor: vagrant
 
 ## Vagrant {#vagrant_title}
 
-Running your application on different environments in development and production can lead to strange bugs 
-popping up when you go live. It's also tricky to keep different development environments up to date with the same 
-version for all libraries used when working with a team of developers. 
+Een applicatie op een verschillend omgeving draaien in productie dan in ontwikkeling kan vreemde foutmeldingen geven wanneer je live gaat.
+Het is ook riskant om verschillende ontwikkelingsomgevingen up to date te houden met dezelfde versie van alle libraries wanneer je in een team van developers werkt.
 
-If you are developing on Windows and deploying to Linux (or anything non-Windows) or are developing in a team, you 
-should consider using a virtual machine. This sounds tricky, but by using [Vagrant][vagrant] you can set up a simple 
-virtual machine with only a few steps. These base boxes can then be set up manually, or you can use "provisioning" 
-software such as [Puppet][puppet] or [Chef][chef] to do this for you. Provisioning the base box is a great way to 
-ensure that multiple boxes are set up in an identical fashion and removes the need for you to maintain complicated 
-"set up" command lists. You can also "destroy" your base box and recreate it without many manual steps, making it
-easy to create a "fresh" installation.
+Indien je bijvoorbeeld ontwikkelt op Windows, en moet deployen op Linux (of iets anders non-Windows), of in een team werkt, moet je zeker overwegen om een Virtuele Machine te gebruiken.
+Dit klinkt moeilijk, maar met [Vagrant][vagrant] kan je een eenvoudige virtuele machile opzetten in slecht enkele stappen.
+Deze basis 'dozen' kunnen dan manueel opgezet worden, of je kan een 'voorzienende' software gebruiken zoals [Puppet][puppet] of [Chef][chef] om dit voor jou te doen.
 
-Vagrant creates folders for sharing your code between your host and your virtual machine, which means that you can 
-create and edit your files on your host machine and then run the code inside your virtual machine.
+'Voorzienende' software gebruiken is een goede manier om te garanderen dat meerdere dozen op een identieke manier opgezet zijn en zorgt ervoor dat je geen complexe setup commando's moet oplijsten.
+Je kan ook je basisdoos 'vernietigen' en opnieuw opbouwen zonder veel manuele stappen. Zo wordt het heel gemakkelijk om een 'verse' installatie op te zetten.
 
-### A little help
+Vagrant maakt folders aan om je code te delen tussen eigen computer en virtuele machine, wat betekent dat je je bestanden kan aanmaken en aanpassen op je eigen werkstation en nadien de code kan draaien op de virtuele machine.
 
-If you need a little help to start using Vagrant there are three services that might be useful:
+### Een beetje hulp
 
-- [Rove][rove]: service that allows you to pre-generate typical Vagrant builds, PHP among the options. The
-  provisioning is made with Chef.
-- [Puphpet][puphpet]: simple GUI to set up virtual machines for PHP development. **Heavily focused in PHP**. Besides
-  local VMs, can be used to deploy to cloud services as well. The provisioning is made with Puppet.
-- [Protobox][protobox]: is a layer on top of vagrant and a web GUI to setup virtual machines for web development. A single YAML document controls everything that is installed on the virtual machine.
+Indien je wat hulp nodig hebt om te starten met Vagrant zijn er drie diensten die nuttig kunnen zijn:
+
+- [Rove][rove]: Dienst die toelaat om typische Vagrant builds aan te maken, waaronder php. De voorziening wordt voorzien door Chef.
+- [Puphpet][puphpet]: eenvoudige GUI om virtuele machines op te zetten voor PHP ontwikkeling. **Zware focus op PHP**. Naast lokale VM's, kan je er ook mee deployen naar cloud-diensten. De voorziening is gemaakt met Puppet.
+- [Protobox][protobox]: dit is een laag bovenop Vagrant en een web GUI om virtuele machines op te zetten voor web ontwikkeling. Eén YAML document controleert alles wat geïnstalleerd is op de virtuele machine.
 
 [vagrant]: http://vagrantup.com/
 [puppet]: http://www.puppetlabs.com/
